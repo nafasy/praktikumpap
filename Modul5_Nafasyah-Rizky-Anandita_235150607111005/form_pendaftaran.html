@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Formulir Pendaftaran Siswa Baru</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table style="width: 70%; margin: 20px auto; border-spacing: 10px;">
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama" required style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" rows="3" required style="width: 100%; padding: 8px;"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tempat & Tanggal Lahir</td>
+                <td>
+                    <input type="text" name="tempat" placeholder="Tempat Lahir" required style="width: 48%; padding: 8px;">
+                    <input type="date" name="tanggal_lahir" required style="width: 48%; padding: 8px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Pilihan Jurusan</td>
+                <td>
+                    <input type="checkbox" name="jurusan[]" value="IPA"> IPA
+                    <input type="checkbox" name="jurusan[]" value="IPS"> IPS
+                    <input type="checkbox" name="jurusan[]" value="Bahasa"> Bahasa
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="agama" required style="width: 100%; padding: 8px;">
+                        <option value="">Pilih Agama</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td>No HP</td>
+                <td><input type="number" name="no_hp" required style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td>Foto Diri</td>
+                <td><input type="file" name="foto" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td>Sekolah Pilihan</td>
+                <td>
+                    <select name="sekolah_pilihan" required style="width: 100%; padding: 8px;">
+                        <option value="">Pilih Sekolah</option>
+                        <option value="SMA Negeri 61 Jakarta">SMA Negeri 61 Jakarta</option>
+                        <option value="SMAN 3 Malang">SMAN 3 Malang</option>
+                        <option value="SMAN 8 Malang">SMAN 8 Malang</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="submit" style="padding: 10px 20px; background-color: green; color: white; border: none; border-radius: 5px;">Kirim</button>
+            <button type="reset" style="padding: 10px 20px; background-color: red; color: white; border: none; border-radius: 5px;">Reset</button>
+        </div>
+    </form>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="index.html" target="_blank" style="display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 5px; background-color: grey; color: beige;">Kembali ke Home</a>
+    </div>
+</body>
+</html>
